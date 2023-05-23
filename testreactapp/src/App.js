@@ -108,9 +108,9 @@ function App() {
                             <>
                                     <div><strong>Name : </strong>{user.name}</div>
                                     <div><strong>Email : </strong>{user.email}</div>
-                                    <div><strong>Password : </strong>{user.password}</div>
-                                    <button onClick={() => handleEdit(user.id, user.name, user.email, user.password)}>Edit</button>
-                                    <button onClick={() => handleDelete(user.id)}>Delete</button> 
+                                    <div><strong>Password : </strong><span style={{color : 'red'}}>*******</span></div>
+                                    <button onClick={() => handleEdit(user.id, user.name, user.email, user.password)} className='edit'>Edit</button>
+                                    <button onClick={() => handleDelete(user.id)} className='delete'>Delete</button> 
                             </>
                         )}
                     </div>
