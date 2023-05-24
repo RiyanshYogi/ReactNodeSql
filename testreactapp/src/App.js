@@ -106,9 +106,9 @@ function App() {
                             </form>
                         ) : (
                             <>
-                                    <div><strong>Name : </strong>{user.name}</div>
-                                    <div><strong>Email : </strong>{user.email}</div>
-                                    <div><strong>Password : </strong><span style={{color : 'red'}}>*******</span></div>
+                                    <div className='innerDiv'><strong>Name : </strong>{user.name}</div>
+                                    <div className='innerDiv'><strong>Email : </strong>{user.email}</div>
+                                    <div className='innerDiv'><strong>Password : </strong><span>{user.password}</span></div>
                                     <button onClick={() => handleEdit(user.id, user.name, user.email, user.password)} className='edit'>Edit</button>
                                     <button onClick={() => handleDelete(user.id)} className='delete'>Delete</button> 
                             </>
