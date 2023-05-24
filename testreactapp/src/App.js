@@ -106,11 +106,11 @@ function App() {
                             </form>
                         ) : (
                             <>
-                                    <div><strong>Name : </strong>{user.name}</div>
-                                    <div><strong>Email : </strong>{user.email}</div>
-                                    <div><strong>Password : </strong>{user.password}</div>
-                                    <button onClick={() => handleEdit(user.id, user.name, user.email, user.password)}>Edit</button>
-                                    <button onClick={() => handleDelete(user.id)}>Delete</button> 
+                                    <div className='innerDiv'><strong>Name : </strong>{user.name}</div>
+                                    <div className='innerDiv'><strong>Email : </strong>{user.email}</div>
+                                    <div className='innerDiv'><strong>Password : </strong><span>{user.password}</span></div>
+                                    <button onClick={() => handleEdit(user.id, user.name, user.email, user.password)} className='edit'>Edit</button>
+                                    <button onClick={() => handleDelete(user.id)} className='delete'>Delete</button> 
                             </>
                         )}
                     </div>
@@ -123,9 +123,9 @@ function App() {
                     <h3>Add the User</h3>
                     <br></br>
                     <form onSubmit={handleSubmit}>
-                      <label>Name : </label>  <input type='text' placeholder='Name' value={name1} onChange={(event) => setName1(event.target.value)}></input><br></br>
-                      <label>Email : </label>  <input type='email' placeholder='Email' value={email1} onChange={(event) => setEmail1(event.target.value)}></input><br></br>
-                      <label className='labelClass'>Password : </label>  <input type='password' placeholder='Password' value={password1} onChange={(event) => setPassword1(event.target.value)}></input><br></br>
+                      <input type='text' placeholder='Name' value={name1} onChange={(event) => setName1(event.target.value)}></input><br></br>
+                      <input type='email' placeholder='Email' value={email1} onChange={(event) => setEmail1(event.target.value)}></input><br></br>
+                      <input type='password' placeholder='Password' value={password1} onChange={(event) => setPassword1(event.target.value)}></input><br></br>
                         <br></br>
                         <button type='submit' >Add User</button>
                         <br></br>
