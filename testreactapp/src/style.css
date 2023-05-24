@@ -3,19 +3,6 @@
     padding: 0;
     margin: 0;
     background-color: rgb(60, 60, 60);
-    overflow: hidden;
-}
- 
-label {
-    position: relative;
-    top: 30px;
-    right: 350px;
-}
-
-.labelClass {
-    position: relative;
-    top: 30px;
-    right: 365px;
 }
 
 button {
@@ -81,19 +68,23 @@ button {
 }
 
 .containerForm > div {
-    flex-basis: 300px;
+    flex-basis: 600px;
     text-align: center;
 }
 
 .containerForm button {
     border-radius: 50px;
     width: 100px;
-    height: 35px;
+    height: 40px;
     background-color: green;
+    position: relative;
+    top: -15px;
 }
 
 input {
     width: 600px;
     border-radius: 50px;
     padding: 10px;
+    border: 1px solid black;
+    margin: 2px;
 }

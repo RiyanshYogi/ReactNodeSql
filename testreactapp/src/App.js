@@ -123,9 +123,9 @@ function App() {
                     <h3>Add the User</h3>
                     <br></br>
                     <form onSubmit={handleSubmit}>
-                      <label>Name : </label>  <input type='text' placeholder='Name' value={name1} onChange={(event) => setName1(event.target.value)}></input><br></br>
-                      <label>Email : </label>  <input type='email' placeholder='Email' value={email1} onChange={(event) => setEmail1(event.target.value)}></input><br></br>
-                      <label className='labelClass'>Password : </label>  <input type='password' placeholder='Password' value={password1} onChange={(event) => setPassword1(event.target.value)}></input><br></br>
+                      <input type='text' placeholder='Name' value={name1} onChange={(event) => setName1(event.target.value)}></input><br></br>
+                      <input type='email' placeholder='Email' value={email1} onChange={(event) => setEmail1(event.target.value)}></input><br></br>
+                      <input type='password' placeholder='Password' value={password1} onChange={(event) => setPassword1(event.target.value)}></input><br></br>
                         <br></br>
                         <button type='submit' >Add User</button>
                         <br></br>
