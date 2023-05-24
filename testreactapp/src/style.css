@@ -48,7 +48,7 @@ button {
     padding: 25px;
     border-color: black;
     background-color: rgba(255,255,255,0.2);
-    box-shadow: 10px 10px 0 10px black;
+    box-shadow: 0px 20px 20px 10px black;
 }
 .innerDiv {
     background-color: rgba(255,255,255,0);
@@ -74,11 +74,13 @@ button {
 
 .containerForm button {
     border-radius: 50px;
+    border: 2px solid black;
     width: 100px;
     height: 40px;
-    background-color: green;
+    background-color: rgba(255,255,255,0.2);
     position: relative;
     top: -15px;
+    box-shadow: 5px 15px 10px black;
 }
 
 input {
