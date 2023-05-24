@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     background-color: rgb(60, 60, 60);
+    overflow: hidden;
 }
  
 label {
